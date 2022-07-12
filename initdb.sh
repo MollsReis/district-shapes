@@ -17,9 +17,8 @@ psql <<-EOSQL
          intptlat                                                       AS lat,
          intptlon                                                       AS lon,
          geom,
-         ST_AsGeoJSON(geom)::JSONB                                AS geojson,
-         ST_Area(geom) / ST_Perimeter(geom)                 AS compactness_ratio,
-         1 - (ST_Area(geom) / ST_Area(ST_ConvexHull(geom))) AS shape_complexity_index
+         ST_AsGeoJSON(geom)::JSONB                                      AS geojson,
+         1 - (ST_Area(geom) / ST_Area(ST_ConvexHull(geom)))             AS shape_complexity_index
   FROM tl_2021_us_cd116 t
   JOIN states s ON (s.state_fp = t.statefp);
 EOSQL
