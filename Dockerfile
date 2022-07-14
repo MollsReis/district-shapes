@@ -6,4 +6,4 @@ RUN curl -LRO https://www2.census.gov/geo/docs/reference/state.txt
 RUN curl -LRO ftp://ftp.census.gov/geo/tiger/TIGER2021/CD/tl_2021_us_cd116.zip
 RUN unzip -d shapefiles tl_2021_us_cd116.zip
 RUN shp2pgsql -s 4326 -I shapefiles/tl_2021_us_cd116.shp > districts.sql
-COPY initdb.sh /docker-entrypoint-initdb.d/
+COPY db/initdb.sh /docker-entrypoint-initdb.d/

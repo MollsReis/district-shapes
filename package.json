@@ -1,0 +1,18 @@
+{
+  "name": "district-shapes",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "git@github.com:EvilScott/district-shapes.git",
+  "author": "R. Scott Reis <reis.robert.s@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bulma": "^0.9.4",
+    "express": "^4.18.1",
+    "leaflet": "^1.8.0",
+    "nodemon": "^2.0.19",
+    "pg": "^8.7.3",
+    "pg-pool": "^3.5.1",
+    "request": "^2.88.2",
+    "request-promise-native": "^1.0.9"
+  }
+}

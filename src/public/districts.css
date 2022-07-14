@@ -1,0 +1,15 @@
+@import 'bulma.css';
+@import 'leaflet.css';
+
+.map {
+    margin: 0 auto 3.5rem;
+    height: 20rem;
+    width: 40rem;
+    border: 1px solid #ccc;
+}
+
+.map-caption {
+    margin: 0 auto;
+    width: 40rem;
+    font-size: 1.5rem;
+}
